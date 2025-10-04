@@ -1,137 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style/style.css">
-  <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.72.0">
+    <title>Blog Template · Bootstrap</title>
+
+    <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/blog/">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+
+    <style>
+        
+    </style>
 </head>
+
 <body>
 
-  <nav class="navbar">
-    <h2 class="logo">My Portfolio</h2>
-    <button id="hamburger-btn">☰</button>
-    <ul id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="file:///C:/Users/Jayvie%20Talundata/WS1/BOOTSRAP%201/index.html#">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="link-secondary" href="#">Subscribe</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">My Blog</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="link-secondary" href="#" aria-label="Search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+       <div class="nav-scroller-custom py-3 mb-4">
+  <nav class="nav d-flex flex-wrap justify-content-start">
+    <a class="nav-pill bg-primary text-white" href="#">Home</a>
+    <a class="nav-pill bg-success text-white" href="#">Nature</a>
+    <a class="nav-pill bg-purple text-white" href="#">Travel</a>
+    <a class="nav-pill bg-info text-white" href="#">Design</a>
+    <a class="nav-pill bg-dark text-white" href="#">Culture</a>
+    <a class="nav-pill bg-secondary text-white" href="#">Style</a>
+    <a class="nav-pill bg-primary text-white" href="#">About</a>
   </nav>
+</div>
 
-  <section id="home" class="hero">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Showcasing my skills and hobbies</p>
-    <a href="#contact" class="btn">Contact Me</a>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
 
-  <section id="about" class="about">
-    <div class="about-container">
-      <img src="c:\Users\Jayvie Talundata\Downloads\Screenshot_25-9-2025_71233_www.facebook.com.jpeg" alt="My Profile Picture" class="profile-pic">
-      <h2>👋 About Me</h2>
-      <p>
-        Hi! My name is <b>Jayvie</b>. I am passionate about technology, learning new skills, 
-        and sharing knowledge with others. I enjoy coding, designing, and exploring creative ideas.
-      </p>
-    </div>
-  </section>
+<head>
+  <meta charset="UTF-8">
+  <title>My Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-  <section id="projects" class="projects">
-  <h2>💼 My Projects</h2>
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>📁 Project 1</h3>
-      <p>A description of Project 1. You can explain what it is, what tools you used, and what you learned.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
+<body>
 
-    <div class="project-card">
-      <h3>📁 Project 2</h3>
-      <p>A description of Project 2. Highlight the skills you applied and the outcomes achieved.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
+  <section class="position-relative p-5 mb-5 text-white" 
+         style="background-color: #6c757d;">
 
-    <div class="project-card">
-      <h3>📁 Project 3</h3>
-      <p>A description of Project 3. Share what made it unique and any challenges you overcame.</p>
-      <a href="#" target="_blank" class="btn">View Project</a>
-    </div>
+  <section style="background-image: url('c:\Users\Jayvie Talundata\OneDrive\Documents\117772363_3533345023397358_5988897575474390892_o.jpg'); background-size: cover; background-position: center;">
+
+</section>
+
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-light" style="opacity: 0.5;"></div>
+
+  
+  <div class="position-relative text-center">
+    <h1 class="display-4 fw-bold">This is my Blog</h1>
+    <p class="fs-5">
+      Each featured blog shows how smart design, clear branding, and a strong point of view come together to create content that resonates.
+      You'll also get practical tips to boost your online presence and connect with readers.
+    </p> 
   </div>
 </section>
 
-  <section id="hobbies">
-    <h2>🎯 My Hobbies</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>🎵 Listening to Music</h3>
-        <p>I love relaxing with my favorite songs every day.</p>
+  <div class="container">
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-dark text-white rounded">
+          <h2 class="display-6">Featured: Nature</h2>
+          <p>Nature is everything around us that helps us live and makes the world beautiful.</p>
+          <a href="#" class="text-white text-decoration-underline">Continue reading...</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>📚 Reading Books (Bible)</h3>
-        <p>I enjoy reading novels and learning new things from books.</p>
-      </div>
-      <div class="card">
-        <h3>⚽ Playing Sports</h3>
-        <p>Basketball and football keep me active and healthy.</p>
-      </div>
-      <div class="card">
-        <h3>🎨 Arts</h3>
-        <p>Art is my way of expressing creativity and imagination.</p>
+      <div class="col-md-6">
+        <img src="c:\Users\Jayvie Talundata\OneDrive\Documents\OIP (1).webp" class="img-fluid rounded" alt="Nature">
       </div>
     </div>
-  </section>
 
-  <section id="mylocation">
-    <h2>My Location</h2>
-    <div class="about-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63411.58864484176!2d124.94646740229656!3d6.619034953916583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f83eb6573e3cf1%3A0xc858f1e5aaf28d1d!2sTelafas%2C%20Columbio%2C%20Sultan%20Kudarat!5e0!3m2!1sen!2sph!4v1758849481120!5m2!1sen!2sph"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <div class="p-4 bg-primary text-white rounded">
+          <h2 class="display-6">Featured: Travel</h2>
+          <p>A personal story of a journey, a guide to a place, or an essay on the experience of travel.</p>
+          <a href="#" class="text-white text-decoration-underline">Continue reading...</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <img src="c:\Users\Jayvie Talundata\OneDrive\Documents\117772363_3533345023397358_5988897575474390892_o.jpg" class="img-fluid rounded" alt="Travel">
+      </div>
     </div>
-  </section>
 
-  <section id="inquire" class="content-form">
-    <h2>Contact Me</h2>
-    <form>
-      <div class="input-box">
-        <input type="text" placeholder="Full Name" required>
-        <input type="email" placeholder="Email" required>
+    
+    <div class="row">
+      <div class="col-md-8">
+        <h3 class="pb-4 mb-4 border-bottom">From the Firehose</h3>
+
+        
+        <article class="mb-5">
+          <h2>Sample blog post</h2>
+          <p class="text-muted">January 1, 2024 by <a href="#">Mark</a></p>
+          <p>This example serves as a practical demonstration for developers and bloggers to understand the layout, typical elements, and styling conventions in a modern Bootstrap blog. It can be used as a basis for:
+Customizing a personal or professional blog
+Learning to organize content in a readable and visually appealing way
+Testing how different elements like headings, lists, images, and code blocks appear together</p>
+          <hr>
+
+
+        <article class="mb-5">
+          <h2>Another blog post</h2>
+          <p class="text-muted">December 23, 2024 by <a href="#">Jacob</a></p>
+          <p>Showcase hidden gems in Surallah or nearby areas, like natural parks, rivers, scenic trails, or local attractions. Share travel guides, photography, or personal stories about exploring these places. Highlighting eco-friendly travel or sustainable tourism can also attract environmentally-conscious readers.</p>
+        </article>
+
+        
+        <article class="mb-5">
+          <h2>New feature</h2>
+          <p class="text-muted">December 14, 2013 by <a href="#">Chris</a></p>
+          <ul>
+            <li>Dynamic Post Presentation
+Make your blog interactive and visually appealing. Use reverse chronological order to highlight new posts, and integrate dynamic elements like featured images, embedded videos, or interactive graphics to retain readers' attention.</li>
+
+          </ul>
+        </article>
+        <nav>
+          <a class="btn btn-outline-primary" href="#">Older</a>
+          <a class="btn btn-outline-secondary disabled" href="#">Newer</a>
+        </nav>
       </div>
-      <div class="input-box">
-        <input type="number" placeholder="Phone Number" required>
-      </div>
-      <textarea placeholder="Your Message" required></textarea>
-      <input type="submit" value="Send Message" class="btn-1">
-    </form>
-  </section>
 
-<footer id="contact">
-  <h3>Contact</h3>
-  <p>Email: jayvietalundata1@gmail.com</p>
-  <p>Phone: 09979551097</p>
-</footer>
+    
+      <aside class="col-md-4">
+        <div class="p-4 mb-4 bg-light rounded">
+          <h4>About</h4>
+          <p>Learn more about how this blog was built using Bootstrap 5.</p>
+        </div>
 
-  <script>
-  const hamburger = document.getElementById('hamburger-btn');
-  const navLinks = document.getElementById('nav-links');
-  const links = navLinks.querySelectorAll('a');
+        <div class="p-4">
+          <h4>Archives</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">October 2025</a></li>
+            <li><a href="#">September 2025</a></li>
+            <li><a href="#">August 2025</a></li>
+          </ul>
+        </div>
 
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('active');
-  });
+        <div class="p-4">
+          <h4>Elsewhere</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
 
-  links.forEach(link => {
-    link.addEventListener('click', () => {
-      if (window.innerWidth <= 768) {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('active');
-      }
-    });
-  });
-</script>
+  <footer class="blog-footer text-center py-4 bg-light mt-5">
+    <p>Blog template built with <a href="https://getbootstrap.com/">Bootstrap</a></p>
+    <p><a href="#">Back to top</a></p>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style/Tstyle.css">
+  <title>Valentines</title>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Main Photo -->
+    <div class="photo-frame"> 
+        <img id="valentinePhoto" src="img1.jpg" alt="My Love">
+    </div>
+
+    <h1>Happy Valentine's Day ❤️</h1>
+
+    <div class="typewriter">
+       💖 Happy Valentine’s Day, my love! You’re my heart, my smile, and my forever. Can’t wait to make more beautiful memories with you. ❤️
+    </div>
+
+    <button id="heartBtn" onclick="toggleLetter()">Open My Heart 💌</button>
+
+    <!-- Love Letter -->
+    <div class="love-letter" id="letter">
+        <div class="letter-photo-frame">
+            <img id="letterPic" src="img2.jpg" alt="Our Love">
+        </div>
+        Kay ganda mo, aking sinta; kay ganda mo, aking mahal.
+    Wala akong maipintas sa taglay mong kagandahan..<br><br>
+        Awit 4:7<br><br>
+        I promise to love you more every single day. ❤️<br><br>
+        Forever yours.
+    </div>
+
+</div>
+
+<script>
+/* Toggle Love Letter */
+function toggleLetter(){
+    const letter = document.getElementById("letter");
+    const btn = document.getElementById("heartBtn");
+    letter.classList.toggle("active");
+    btn.innerHTML = letter.classList.contains("active") ? "Close My Heart 💔" : "Open My Heart 💌";
+}
+
+/* Floating Hearts */
+function createHeart(){
+    const heart = document.createElement("div");
+    heart.classList.add("heart");
+    heart.innerHTML = "❤️";
+    heart.style.left = Math.random()*100 + "vw";
+    heart.style.fontSize = Math.random()*20+15 + "px";
+    heart.style.animationDuration = Math.random()*3+5 + "s";
+    document.body.appendChild(heart);
+    setTimeout(()=>{heart.remove();},8000);
+}
+setInterval(createHeart,400);
+</script>
+
+</body>
+</html>
